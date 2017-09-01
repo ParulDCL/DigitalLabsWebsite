@@ -1,0 +1,189 @@
+/* Global styles
+------------------------------------*/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+a {
+  color: #DB8D18;
+}
+a:hover {
+  text-decoration: none;
+}
+h1, h2 {
+  font-family: 'Encode Sans Semi Condensed', sans-serif;
+  font-weight: 400;
+}
+h1 {
+  font-size: 80px;
+}
+h2 {
+  font-size: 40px;
+  margin-top: 0;
+}
+.content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 50px;
+  overflow: hidden;
+      height:650px;    
+
+}
+
+.content-wrap-small {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 5px;
+  overflow: hidden;
+
+}
+.column-narrow {
+  width: 30%;
+  float: left;
+  padding-right: 3%;
+  min-height: 175px;
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+.column-wide {
+  width: 62%;
+  float: left;
+  min-height: 175px;
+}
+
+/* Header & Footer
+------------------------------------*/
+header {
+  background: #143E4C;
+  color: #8D99AE;
+}
+
+header h1,
+header h2 {
+  color: #DB8D18;
+  margin: 0;
+}
+
+header h2 {
+    float:left;
+}
+
+/* Header styles only */
+header {
+  /*text-align: center;*/
+    position:fixed;
+    width: 100%;
+}
+.header-contact-info a {
+  padding: 15px 10px;
+  display: inline-block;
+  float:right;
+}
+
+.header-content-wrap {
+  max-width: 950px;
+  margin: 0 auto;
+  overflow: hidden;
+  height: 60px;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 30px;
+}
+
+/* Footer styles only */
+footer {
+    }
+.contact-info a {
+  padding: 10px;
+  display: inline-block;
+}
+
+footer {
+  background: white;
+  color: #3D9BE9;
+}
+
+footer .column-narrow {
+      color: #3D9BE9;
+    font-size: 20px;
+    text-align: left
+
+}
+
+footer .column-wide{
+    margin-top: 25px;
+}
+
+.footer-text {
+    width:100%;
+    height: 30px;
+    border: solid;
+    border-color: #3D9BE9;
+    margin: 1px;
+}
+
+input[type=text]::-webkit-input-placeholder { /* Safari, Chrome(, Opera?) */
+ color:#3D9BE9;
+}
+input[type=search]:-moz-placeholder { /* Firefox 18- */
+ color:#3D9BE9;
+}
+input[type=search]::-moz-placeholder { /* Firefox 19+ */
+ color:#3D9BE9;
+}
+input[type=search]:-ms-input-placeholder { /* IE (10+?) */
+ color:#3D9BE9;
+}
+
+.footer-button {
+    float: right;
+    background:#3D9BE9 ;
+    color: white;
+    width: 80px;
+    height: 35px;
+     box-shadow: none;
+  border-radius: 0;
+    font-size: 20px;
+    box-shadow: none;
+    text-shadow: -1px 1px #417cb8;
+  border: none;
+    margin-top: 5px;
+}
+
+/* Work Experience
+------------------------------------*/
+.work {
+  background: #40ACB6;
+    
+     background:linear-gradient(to left top, #40ACB6, 1) 0%/*bottom-right color*/, #64A6DF 50% /*middle color*/, #9494D6 100% /*top-left color*/);
+    
+          background:linear-gradient(to left top, #40ACB6 0%/*bottom-right color*/, #64A6DF 50% /*middle color*/, #9494D6 100% /*top-left color*/),linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1))/*"faked" black background make sure to add last or it will appear before the transparent/colored layer*/;
+    
+}
+.work-text {
+    width: 650px;
+    font-size: 60px;
+    color: white;
+    margin-top: 160px;
+}
+
+/* Education
+------------------------------------*/
+.education {
+    background: #8D99AE;
+}
+
+.about{
+    background: #5E90E3;
+    color: white;
+}
+
+.about h2 {
+    margin: 0;
+}
