@@ -4,17 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Cloud Labs</title>
-    <link href="https://fonts.googleapis.com/css?family=Caveat|Open+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
     <link rel="stylesheet" href="css/dcl.css">
     
+    
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>    
 <body>
     <!-- // Intro -->
     <header>
         <div class="header-content-wrap">
-            
+
             <h2>Digital Cloud Labs</h2>
+      
             <div class="header-contact-info">
                 <a href="#contact">Contact</a>
                 <a href="#about">About</a>
@@ -77,7 +107,18 @@
                 <!-- School details: copy this block to add more schools. -->
                 <div class="content-wrap-small">
                     <div class="column-narrow">
-                        <p>OUR VISION</p>
+                    <img class="vision-img" src="images/Story.svg" alt="vision">
+                    </div>
+                    <div class="column-wide">
+                        <h2>OUR STORY</h2>
+                        <p>Digital Cloud Labs Ltd invests in and operates technology platforms for various industries to facilitate the delivery of regulatory requirements efficiently and effectively.
+                        We are a group of seasoned banking and technology professionals with a shared passion for continuous product innovation. We create value through disciplined development and execution.
+                        </p>
+                    </div>
+                </div>
+                <div class="content-wrap-small">
+                    <div class="column-narrow">
+            <img class="vision-img" src="images/Vision.svg" alt="vision">
                         
                     </div>
                     <div class="column-wide">
@@ -88,19 +129,7 @@
                 </div>
                 <div class="content-wrap-small">
                     <div class="column-narrow">
-                        <p>OUR STORY</p>
-                        
-                    </div>
-                    <div class="column-wide">
-                        <h2>OUR VISION</h2>
-                        <p>ODigital Cloud Labs Ltd invests in and operates technology platforms for various industries to facilitate the delivery of regulatory requirements efficiently and effectively.
-We are a group of seasoned banking and technology professionals with a shared passion for continuous product innovation. We create value through disciplined development and execution.
-</p>
-                    </div>
-                </div>
-                <div class="content-wrap-small">
-                    <div class="column-narrow">
-                        <p>TECHNOLOGY</p>
+                    <img class="vision-img" src="images/Tech.svg" alt="vision">
                         
                     </div>
                     <div class="column-wide">
@@ -111,12 +140,8 @@ We are a group of seasoned banking and technology professionals with a shared pa
                 </div>
             </div>
         </section>
-
-    </main>
-    
-    <!-- // Footer & contact info -->
-    <footer>
-    <a href="#" id="contact" style="visibility: hidden">Check</a>
+        <section class="contact">
+            <a href="#" id="contact" style="visibility: hidden">Check</a>
        
         <div class="content-wrap">
             <h2>CONTACT US</h2>
@@ -129,23 +154,38 @@ We are a group of seasoned banking and technology professionals with a shared pa
                         
                     </div>
                     <div class="column-wide">
-                        <form action="/action_page.php">
-                          <input class="footer-text" type="text" name="firstname" placeholder="name">
+                        <form >
+                          <input class="contact-text" type="text" name="firstname" placeholder="Name">
                           <br>
-                          <input class="footer-text" type="text" name="lastname" placeholder="email">
+                          <input class="contact-text" type="text" name="lastname" placeholder="email">
                           <br>
-                          <input class="footer-text" type="text" name="phone" placeholder="phone">
+                          <input class="contact-text" type="text" name="phone" placeholder="Phone">
                           <br>
-                          <input class="footer-text" type="text" name="subject" placeholder="subject">
+                          <input class="contact-text" type="text" name="subject" placeholder="Subject">
                           <br>
-                          <input class="footer-text" type="text" name="message" placeholder="message">
+                         
+                          <textarea class="contact-textarea" rows="4" cols="50" placeholder="Message"></textarea>
+      
                           <br>
                               
-                          <input class="footer-button" type="submit" value="SEND">
+                          <input class="contact-button" type="submit" value="SEND">
                         </form> 
                     </div>
                 </div>
-            <p>Copyright 2017 Digital cloud labs</p>
+        </div>
+        </section>    
+
+    </main>
+    
+    <!-- // Footer & contact info -->
+    <footer>
+    <a href="#" id="contact" style="visibility: hidden">Check</a>
+       
+        <div class="content-wrap">
+            <h2>Digital cloud labs</h2>
+            
+            
+            <p>© 2017 Digital Cloud Labs Limited. All Rights Reserved</p>
         </div>
     </footer>
 </body>
